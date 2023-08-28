@@ -15,19 +15,12 @@ const Footer = () => {
       <div className="social">
         <CustomLink
           iconDom={<GithubOne />}
-          to={`https://github.com/${githubName}/`}
+          to={`https:${githubName}/`}
         />
         <CustomLink iconDom={<Home />} to={homeUrl} />
         <CustomLink iconDom={<Mail />} to={`mailto:${emailUrl}`} />
       </div>
       <div className="text">
-        <p>
-          <CustomLink
-            text={Package.alia}
-            to="https://github.com/imsyy/site-status"
-          />
-          &nbsp;Version&nbsp;{Package.version}
-        </p>
         <p>
           基于&nbsp;
           <CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />
